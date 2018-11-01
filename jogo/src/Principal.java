@@ -13,7 +13,7 @@ public class Principal {
 		int opcao;
 		
 		
-		System.out.println("Bem Vindo ao Jogo da velha!!");
+		System.out.println("Bem Vindo ao Jogo da velha feito pela equipe ADE!!");
 		
 		do
 		{
@@ -24,9 +24,9 @@ public class Principal {
 			System.out.println("Escolha uma opção: ");
 			System.out.println("1 - Jogar contra um amigo");
 			System.out.println("2 - Jogar contra a maquina");
-			System.out.println("3 - sair");
+			System.out.println("3 - Sair");
 			
-			System.out.println("Digite a opção Correspondente: ");
+			System.out.println("Digite a opção correspondente: ");
 			opcao = ler.nextInt();
 			
 			
@@ -55,14 +55,7 @@ public class Principal {
 			
 		}
 		while(repetir==1);
-		 
-		 
 		
-		
-		
-		 
-		 
-		 
 	} 
 	 
 
