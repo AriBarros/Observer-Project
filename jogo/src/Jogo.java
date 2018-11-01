@@ -53,12 +53,11 @@ int quantidadeDeJogadas = 0;
 			
 			
 		
-		
 	}
 	
-	public void jogada ( Jogador jogador,int linha,int coluna)
-	{
 	
+	public void jogada (Jogador jogador,int linha,int coluna)
+	{
 			matriz[linha][coluna] = jogador.getSimbolo();	
 	}
 
@@ -72,7 +71,7 @@ int quantidadeDeJogadas = 0;
 	
 	public void MensagemVitoria(Jogador jogador)
 	{
-		System.out.println("Parabens "+jogador.getNome());
+		System.out.println("Parabéns " + jogador.getNome());
 		System.out.println("Você venceu!!");
 		
 	}
