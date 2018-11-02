@@ -41,7 +41,7 @@ public class Principal {
 			}
 			else if(opcao==3)
 			{
-				
+				JogoMaquinaXMaquina.jogar();
 				
 			}
 			else if(opcao==4)
