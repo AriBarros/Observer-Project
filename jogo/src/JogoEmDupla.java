@@ -12,31 +12,9 @@ public class JogoEmDupla {
 		Scanner ler1 = new Scanner(System.in);
 
 		int repetir=1;
-		int numero;
-		int one, two, three, four, five, six, seven, eight, nine;
-		int um, dois, tres, quatro, cinco, seis, sete, oito, nove; 
+		int numero; 
 		String nome1;
 		String nome2;
-		
-		one =0;
-		two = 0;
-		three = 0;
-		four = 0; 
-		five = 0;
-		six = 0;
-		seven = 0;
-		eight = 0;
-		nine = 0;
-		
-		um = 0;
-		dois = 0;
-		tres = 0;
-		quatro = 0;
-		cinco = 0;
-		seis = 0;
-		sete = 0;
-		oito = 0;
-		nove = 0;
 
 		System.out.println();
 		System.out.println("Jogador 1 digite seu nome: ");
@@ -66,56 +44,56 @@ public class JogoEmDupla {
 				 System.out.println("Escolha um número " + jogador1.getNome() + ":");
 				 numero = ler1.nextInt();
 				 
-				 if(numero==1 && one != 1 && um !=1)
+				 if(numero==1)
 				 {
 					 jogo.jogada(jogador1, 0, 0);
-					 um = 1;
+					 
 					
 				 }
-				 else if(numero==2 && two != 1  && dois !=1)
+				 else if(numero==2)
 				 {
 					 jogo.jogada(jogador1, 0, 1);
-					 dois = 1;
+					 
 				 }
-				 else if(numero==3 && three != 1  && tres !=1)
+				 else if(numero==3)
 				 {
 					 jogo.jogada(jogador1, 0, 2);
-					 tres = 1;
+					
 				 }
-				 else if(numero==4 && four != 1  && quatro !=1)
+				 else if(numero==4)
 				 {
 					 jogo.jogada(jogador1, 1, 0);
-					 quatro = 1;
+					 
 				 }
-				 else if(numero==5 && five != 1  && cinco !=1)
+				 else if(numero==5)
 				 {
 					 jogo.jogada(jogador1, 1, 1);
-					 cinco = 1;
+					
 				 }
-				 else if(numero==6 && six != 1  && seis !=1)
+				 else if(numero==6)
 				 {
 					 jogo.jogada(jogador1, 1, 2);
-					 seis = 1;
+					
 				 }
-				 else if(numero==7 && seven != 1  && sete !=1)
+				 else if(numero==7)
 				 {
 					 jogo.jogada(jogador1, 2, 0);
-					 sete = 1;
+					
 				 }
-				 else if(numero==8 && eight != 1  && oito !=1)
+				 else if(numero==8)
 				 {
 					 jogo.jogada(jogador1, 2, 1);
-					 oito = 1;
+					
 				 }
-				 else if(numero==9 && nine != 1  && nove !=1)
+				 else if(numero==9)
 				 {
 					 jogo.jogada(jogador1, 2, 2);
-					 nove = 1;
+					
 				 }
 				 else
 				 {
 					 System.out.println("Opção inválida, digite outro número!");
-					 repetir--;
+					 
 				 }
 				 
 			
@@ -139,50 +117,50 @@ public class JogoEmDupla {
 				 System.out.println("Escolha um número " + jogador2.getNome() + ":");
 				 numero = ler1.nextInt();
 				 
-				 if(numero==1 && um!=1 && one !=1)
+				 if(numero==1)
 				 {
 					 jogo.jogada(jogador2, 0, 0);
-					 one = 1;
+					
 				 }
-				 else if(numero==2 && dois!=1 && two !=1)
+				 else if(numero==2)
 				 {
 					 jogo.jogada(jogador2, 0, 1);
-					 two = 1;
+					
 				 }
-				 else if(numero==3 && tres!=1 && three !=1)
+				 else if(numero==3)
 				 {
 					 jogo.jogada(jogador2, 0, 2);
-					 three = 1;
+					
 				 }
-				 else if(numero==4 && quatro!=1 && four !=1)
+				 else if(numero==4)
 				 {
 					 jogo.jogada(jogador2, 1, 0);
-					 four = 1;
+					
 				 }
-				 else if(numero==5 && cinco!=1 && five !=1)
+				 else if(numero==5)
 				 {
 					 jogo.jogada(jogador2, 1, 1);
-					 five = 1;
+					
 				 }
-				 else if(numero==6 && seis!=1 && six !=1)
+				 else if(numero==6)
 				 {
 					 jogo.jogada(jogador2, 1, 2);
-					 six = 1;
+					 
 				 }
-				 else if(numero==7 && sete!=1 && seven !=1)
+				 else if(numero==7)
 				 {
 					 jogo.jogada(jogador2, 2, 0);
-					 seven = 1;
+					 
 				 }
-				 else if(numero==8 && oito!=1 && eight !=1)
+				 else if(numero==8 )
 				 {
 					 jogo.jogada(jogador2, 2, 1);
-					 eight = 1;
+					
 				 }
-				 else if(numero==9 && nove!=1 && nine !=1)
+				 else if(numero==9)
 				 {
 					 jogo.jogada(jogador2, 2, 2);
-					 nine = 1;
+					
 				 }
 				 else
 				 {
