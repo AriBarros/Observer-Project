@@ -24,7 +24,8 @@ public class Principal {
 			System.out.println("Escolha uma opção: ");
 			System.out.println("1 - Jogar contra um amigo");
 			System.out.println("2 - Jogar contra a maquina");
-			System.out.println("3 - Sair");
+			System.out.println("3 - ver uma partida maquina contra maquina");
+			System.out.println("4 - Sair");
 			
 			System.out.println("Digite a opção correspondente: ");
 			opcao = ler.nextInt();
@@ -40,8 +41,12 @@ public class Principal {
 			}
 			else if(opcao==3)
 			{
-				repetir=0;
 				
+				
+			}
+			else if(opcao==4)
+			{
+				repetir=0;
 			}
 			else 
 			{
