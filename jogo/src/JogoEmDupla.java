@@ -26,6 +26,9 @@ public class JogoEmDupla {
 		
 		Jogador jogador1 = new Jogador(nome1, "X");
 		Jogador jogador2 = new Jogador(nome2, "O");
+		jogador1.adicionarObservadores(jogo);
+		jogador2.adicionarObservadores(jogo);
+
 		
 		System.out.println(" "+jogador1.getNome()+ " Seu simbolo será: "+jogador1.getSimbolo());
 		System.out.println(" "+jogador2.getNome()+ " Seu simbolo será: "+jogador2.getSimbolo());
@@ -110,7 +113,7 @@ public class JogoEmDupla {
 				 System.out.println();
 				 System.out.println();
 				 System.out.println();
-				 jogo.exibirTabela();
+				 jogador1.notificacao();
 				 if(jogo.VerificarVitoria(jogador1.getSimbolo()) == true)
 				 {
 				 System.out.println();
@@ -189,7 +192,7 @@ public class JogoEmDupla {
 				 System.out.println();
 				 System.out.println();
 				 System.out.println();
-				 jogo.exibirTabela();
+				 jogador2.notificacao();
 				 if(jogo.VerificarVitoria(jogador2.getSimbolo()) == true)
 				 {
 				 System.out.println();

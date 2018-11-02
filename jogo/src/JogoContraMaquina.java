@@ -30,6 +30,9 @@ public class JogoContraMaquina {
 		
 		Jogador jogador1 = new Jogador(nome, "X");
 		Jogador jogador2 = new Jogador("MAQUINA DO MAL", "O");
+		jogador1.adicionarObservadores(jogo);
+		jogador2.adicionarObservadores(jogo);
+	
 		
 		System.out.println(" "+jogador1.getNome()+ " Seu simbolo será: "+jogador1.getSimbolo());
 		System.out.println("O simbolo da maquina será: "+jogador2.getSimbolo());
@@ -115,7 +118,7 @@ public class JogoContraMaquina {
 				 System.out.println();
 				 System.out.println();
 				 System.out.println();
-				 jogo.exibirTabela();
+				 jogador1.notificacao();
 				 if(jogo.VerificarVitoria(jogador1.getSimbolo()) == true)
 				 {
 				 System.out.println();
@@ -139,7 +142,7 @@ public class JogoContraMaquina {
 				 System.out.println();
 				 System.out.println();
 				 System.out.println();
-				 jogo.exibirTabela();
+				 jogador2.notificacao();
 				 if(jogo.VerificarVitoria(jogador2.getSimbolo()) == true)
 				 {
 				 System.out.println();
