@@ -46,53 +46,62 @@ public class JogoEmDupla {
 				 
 				 if(numero==1)
 				 {
-					 jogo.jogada(jogador1, 0, 0);
-					 
-					
+					 if(jogo.jogada(jogador1, 0, 0) == false)
+						 continue;
+	
 				 }
 				 else if(numero==2)
 				 {
-					 jogo.jogada(jogador1, 0, 1);
+					 
+					 if(jogo.jogada(jogador1, 0, 1)== false)
+						 continue;
 					 
 				 }
 				 else if(numero==3)
 				 {
-					 jogo.jogada(jogador1, 0, 2);
+					 if(jogo.jogada(jogador1, 0, 2)==false)
+						 continue;
 					
 				 }
 				 else if(numero==4)
 				 {
-					 jogo.jogada(jogador1, 1, 0);
-					 
+					 if(jogo.jogada(jogador1, 1, 0)==false)
+						 continue;
 				 }
 				 else if(numero==5)
 				 {
-					 jogo.jogada(jogador1, 1, 1);
+					 if(jogo.jogada(jogador1, 1, 1)==false)
+						 continue;
 					
 				 }
 				 else if(numero==6)
 				 {
-					 jogo.jogada(jogador1, 1, 2);
+					 if(jogo.jogada(jogador1, 1, 2)==false)
+						 continue;
 					
 				 }
 				 else if(numero==7)
 				 {
-					 jogo.jogada(jogador1, 2, 0);
+					 if(jogo.jogada(jogador1, 2, 0)==false)
+						 continue;
 					
 				 }
 				 else if(numero==8)
 				 {
-					 jogo.jogada(jogador1, 2, 1);
+					 if(jogo.jogada(jogador1, 2, 1)==false)
+						 continue;
 					
 				 }
 				 else if(numero==9)
 				 {
-					 jogo.jogada(jogador1, 2, 2);
+					 if(jogo.jogada(jogador1, 2, 2)==false)
+						 continue;
 					
 				 }
 				 else
 				 {
 					 System.out.println("Opção inválida, digite outro número!");
+					 continue;
 					 
 				 }
 				 
@@ -119,53 +128,62 @@ public class JogoEmDupla {
 				 
 				 if(numero==1)
 				 {
-					 jogo.jogada(jogador2, 0, 0);
+					 if(jogo.jogada(jogador2, 0, 0) == false)
+						 continue;
 					
 				 }
 				 else if(numero==2)
 				 {
-					 jogo.jogada(jogador2, 0, 1);
+					 if(jogo.jogada(jogador2, 0, 1) == false)
+						 continue;
 					
 				 }
 				 else if(numero==3)
 				 {
-					 jogo.jogada(jogador2, 0, 2);
+					 if(jogo.jogada(jogador2, 0, 2) == false)
+						 continue;
 					
 				 }
 				 else if(numero==4)
 				 {
-					 jogo.jogada(jogador2, 1, 0);
+					 if(jogo.jogada(jogador2, 1, 0) == false)
+						 continue;
 					
 				 }
 				 else if(numero==5)
 				 {
-					 jogo.jogada(jogador2, 1, 1);
+					 if(jogo.jogada(jogador2, 1, 1) == false)
+						 continue;
 					
 				 }
 				 else if(numero==6)
 				 {
-					 jogo.jogada(jogador2, 1, 2);
+					 if(jogo.jogada(jogador2, 1, 2) == false)
+						 continue;
 					 
 				 }
 				 else if(numero==7)
 				 {
-					 jogo.jogada(jogador2, 2, 0);
+					 if(jogo.jogada(jogador2, 2, 0) == false)
+						 continue;
 					 
 				 }
 				 else if(numero==8 )
 				 {
-					 jogo.jogada(jogador2, 2, 1);
+					 if(jogo.jogada(jogador2, 2, 1) == false)
+						 continue;
 					
 				 }
 				 else if(numero==9)
 				 {
-					 jogo.jogada(jogador2, 2, 2);
+					 if(jogo.jogada(jogador2, 2, 2) == false)
+						 continue;
 					
 				 }
 				 else
 				 {
 					 System.out.println("Opção inválida, digite outro número!");
-					 repetir--;
+					continue;
 				 }
 				 
 				 System.out.println();
