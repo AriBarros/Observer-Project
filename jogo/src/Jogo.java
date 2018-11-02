@@ -1,5 +1,5 @@
 
-public class Jogo {
+public class Jogo extends Observer {
 	
 String [][] matriz = new String [3][3];
 int quantidadeDeJogadas = 0;
@@ -95,6 +95,13 @@ int quantidadeDeJogadas = 0;
 		}
 		
 		return false;
+		
+	}
+
+	@Override
+	public void atualizarDados() {
+
+		exibirTabela();
 		
 	}
 	
