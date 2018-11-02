@@ -56,9 +56,20 @@ int quantidadeDeJogadas = 0;
 	}
 	
 	
-	public void jogada (Jogador jogador,int linha,int coluna)
+	public boolean jogada (Jogador jogador,int linha,int coluna)
 	{
-			matriz[linha][coluna] = jogador.getSimbolo();	
+		
+		if(verificarPosicao(linha, coluna) == true )
+		{
+			matriz[linha][coluna] = jogador.getSimbolo();
+			return true;
+		}
+		return false;
+		
+	
+		
+		
+				
 	}
 
 	public void empate() {
@@ -73,6 +84,17 @@ int quantidadeDeJogadas = 0;
 	{
 		System.out.println("Parabéns " + jogador.getNome());
 		System.out.println("Você venceu!!");
+		
+	}
+	
+	public boolean verificarPosicao(int i,int j)
+	{
+		if(!matriz[i][j].equals("X") && !matriz[i][j].equals("O"))
+		{
+			return true;
+		}
+		
+		return false;
 		
 	}
 	
