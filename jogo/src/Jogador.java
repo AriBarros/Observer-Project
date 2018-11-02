@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Jogador {
 	
+	public List<Observer> observadores = new ArrayList<>();
 	
 	private String nome;
 	private String simbolo;
@@ -25,6 +28,24 @@ public class Jogador {
 	}
 	public void setSimbolo(String simbolo) {
 		this.simbolo = simbolo;
+	}
+	
+	public void notificacao()
+	{
+		notificarObservadores();
+	}
+
+	public void adicionarObservadores(Observer observer)
+	{
+		this.observadores.add(observer);
+	}
+
+	private void notificarObservadores() {
+		
+		for (Observer observer : observadores) {
+			observer.atualizarDados();
+		}
+		
 	}
 	
 
