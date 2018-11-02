@@ -213,7 +213,7 @@ public class JogoEmDupla {
 		System.out.println();
 		System.out.println();
 		System.out.println();
-		if(repetir>=9)
+		if(repetir>9)
 		jogo.empate();
 		System.out.println();
 		System.out.println();

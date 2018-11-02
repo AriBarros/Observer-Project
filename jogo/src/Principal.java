@@ -36,7 +36,7 @@ public class Principal {
 			}
 			else if(opcao == 2)
 			{
-				
+				JogoContraMaquina.jogar();
 			}
 			else if(opcao==3)
 			{
